@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jazzhouse</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="jazzhouse" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+  <canvas id="backgroundCanvas"></canvas>
+  
+  <div class="center-content">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>Under Construction</h1>
+  </div>
+  
+  <div class="menu">
+    <button class="menu-toggle">Menu</button>
+    <div class="menu-content">
+      <button onclick="setShape('line')">Lines</button>
+      <button onclick="setShape('triangle')">Triangles</button>
+      <button onclick="setShape('square')">Squares</button>
+      <div>
+        <label for="lineCountSlider">Objects: <span id="lineCountValue">100</span></label>
+        <input type="range" id="lineCountSlider" min="10" max="300" value="100">
+      </div>
+      <div>
+        <label for="sizeSlider">Size: <span id="sizeValue">25</span></label>
+        <input type="range" id="sizeSlider" min="10" max="50" value="25">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
